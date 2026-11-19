@@ -1,0 +1,16 @@
+# data and results are not part of the repository
+*.tif
+*.tiff
+*.png
+*.jpg
+*.npy
+*.npz
+*.csv
+*.log
+liver_out/
+data/
+saved_model*/
+__pycache__/
+*.pyc
+.vscode/
+.idea/

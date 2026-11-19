@@ -1,0 +1,7 @@
+# Python 3.10 (Yoga): registration, high-resolution mapping, ROI selection
+numpy<2
+scipy
+pandas
+opencv-python
+tifffile
+matplotlib
