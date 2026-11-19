@@ -18,7 +18,6 @@ The data and all results are not included in this repository.
 | `interpolation/` | 5–5e | leave-out evaluation of InterpolAI (5), structure metrics / lumen Dice (5b), pooling and Wilcoxon tests (5c), merged stacks and x-z reslices (5d), montages A → generated → B (5e) |
 | `finetuning/` | 6a–6c | training ROIs at full resolution (6a), fine-tuning of the FILM model used by InterpolAI (6b), paired comparison pre-trained vs fine-tuned (6c) |
 | `segmentation/` | 7a–7c | VitaminP nucleus and whole-cell segmentation (7a), constrained growth of cells into tissue (7b), linking 2D cells across sections into 3D cells (7c, not yet evaluated) |
-| `tools/` | | identify which released FILM checkpoint InterpolAI uses |
 
 Every script documents its usage and outputs in the header docstring.
 
