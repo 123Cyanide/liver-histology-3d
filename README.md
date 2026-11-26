@@ -4,8 +4,6 @@ Master's thesis (Heidelberg University, group of Prof. J. Hesser; supervisor Iri
 Goal: build a realistic 3D tissue geometry from serial histology for Monte Carlo
 diffusion MRI simulation with disimpy.
 
-Pipeline: **registration → interpolation between sections → cell segmentation → 3D cells → mesh → disimpy**
-
 Data: Kartasalo et al. 2018 (*Bioinformatics* 34:3013), liver, 47 H&E sections,
 0.46 µm/px, 5 µm apart, with laser-drilled fiducials marked by two observers.
 The data and all results are not included in this repository.
@@ -18,7 +16,6 @@ The data and all results are not included in this repository.
 | `interpolation/` | 5–5e | leave-out evaluation of InterpolAI (5), structure metrics / lumen Dice (5b), pooling and Wilcoxon tests (5c), merged stacks and x-z reslices (5d), montages A → generated → B (5e) |
 | `finetuning/` | 6a–6c | training ROIs at full resolution (6a), fine-tuning of the FILM model used by InterpolAI (6b), paired comparison pre-trained vs fine-tuned (6c) |
 | `segmentation/` | 7a–7c | VitaminP nucleus and whole-cell segmentation (7a), constrained growth of cells into tissue (7b), linking 2D cells across sections into 3D cells (7c, not yet evaluated) |
-| `tools/` | | identify which released FILM checkpoint InterpolAI uses |
 
 Every script documents its usage and outputs in the header docstring.
 
@@ -33,7 +30,7 @@ Every script documents its usage and outputs in the header docstring.
 External code: [InterpolAI](https://github.com/sjoshi17jhu/InterpolAI),
 [FILM](https://github.com/google-research/frame-interpolation),
 [VitaminP](https://github.com/idso-fa1-pathology/VitaminP),
-CODA (Kiemen et al. 2022, re-implemented, not copied).
+CODA (Kiemen et al. 2022, re-implemented).
 
 ## Main results so far
 
